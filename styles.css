@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'Apple Chancery';
+    src: url('assets/fonts/AppleChancery.ttf') format('truetype'); /* Corrected font URL format */
+    font-weight: normal;
+    font-style: normal;
+}
+  
+html, body {
+    font-family: 'Apple Chancery', cursive; 
+    background-color: rgba(182, 8, 8, 0.76);
+    color: white;
+    font-size: larger;
+    margin: 0px;
+}
+
+.hide {
+    display: none;
+}
+
+hr {
+    width: 50%;
+    margin-top: -3px;
+    margin-bottom: -3px;
+    border: 1px solid black; /* Border shorthand */
+}
+
+.navBar {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+
+.headerContainer {
+    background-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+    height: 13%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.headerTitle {
+    color: rgb(255, 255, 255);
+    font-size: 50px; /* Add 'px' unit */
+    font-weight: bold; /* Make the font thicker */
+    padding-right: 50px;
+}
+
+
+.headerTitle a {
+    font-size: 50px;
+    color: rgb(255, 158, 190);
+    text-decoration: none;
+}
+
+.footer {
+    background-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+    height: 10%;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerTitle {
+    color: rgb(255, 255, 255);
+    font-size: 50px; /* Add 'px' unit */
+    font-weight: bold; /* Make the font thicker */
+    padding-right: 50px;
+}
+
+.footerTitle a {
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.mainContainer {
+    background-image: linear-gradient(to bottom right, #00c6fb, #005bea);
+    height: 80%;
+    width: 80%;
+    margin: 0px;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+}
+
+.insideContainer {
+    height: 85%; /* Adjust the height as needed */
+    width: 90%; /* Adjust the width as needed */
+    margin: 5%; /* Add margin around the insideContainer */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.origamiContainer:hover {
+    filter: brightness(1.2); /* Add a slight brightness effect on hover */
+}
+
+
+.tableOfContententsTitle {
+    height: 80px;
+}
+
+.tableOfContententsTitle a {
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+/* Link hover effect */
+.tableOfContententsTitle a:hover {
+    color: #7526cf; /* Light purple color */
+}
+
+.videoContainer {
+    width: 95%;
+    height: 100%;
+    margin-top: 2%;
+}
+
+.youtubeLink {
+    color: rgb(255, 255, 255);
+    margin: 1%;
+}
+

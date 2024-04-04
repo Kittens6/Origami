@@ -14,7 +14,7 @@ fetch('pages.json')
         
         // Generate HTML content dynamically based on the selected page
         const htmlContent = `
-            <div class="headerContainer">
+            <div class="header">
                 <div class="headerTitle">${selectedPage.headerTitle}</div>
                 <div class="navBar" id="navBar">
                     <div class="navBarHamburgerContainer" onclick="toggleMenu(this)">
@@ -27,6 +27,7 @@ fetch('pages.json')
                         <ul>
                             <li><a href="index.html">Home</a></li>
                             ${navbarLinks}
+                            <li><a href="addpage.html">Add +</a></li>
                         </ul>
                     </div>
                 </div>

@@ -25,13 +25,18 @@ hr {
     border: 1px solid black; /* Border shorthand */
 }
 
+#addForm input {
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
 .navBar {
     position: absolute;
     top: 40px;
     right: 40px;
 }
 
-.headerContainer {
+.header {
     background-image: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
     height: 13%;
     display: flex;

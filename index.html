@@ -1,67 +1,41 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Kitty Origami</title>
-        <link rel="stylesheet" href="css/styles.css">
-    </head>
-    <body> 
+<head>
+    <meta charset="UTF-8">
+    <title>Kitty Origami</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body> 
 
-        <div class="headerContainer">
+    <div class="headerContainer">
+        <div class="headerTitle">Origami Table Of Contents</div>
+    </div>
 
-            <div class="headerTitle">Origami Table Of Contents</div>
-        
-        </div>
+    <div class="mainContainer" id="animalList"></div>
 
-        <div class="mainContainer">
-            <div class="insideContainer">
-                
-                <hr>
+    <div class="footer" id="footer"></div>
 
-                <div class="origamiContainer">
-                    <div class="tableOfContententsTitle"><a href="bunny.html">Bunny</a></div>
-                </div>
+    <script>
+        // Fetch the JSON data
+        fetch('pages.json')
+            .then(response => response.json()) // Parse JSON response
+            .then(data => {
+                // Generate HTML content dynamically based on JSON data
+                let htmlContent = '<div class="insideContainer">';
+                data.forEach(page => {
+                    htmlContent += `
+                        <hr>
+                        <div class="origamiContainer">
+                            <div class="tableOfContententsTitle"><a href="origami.html?animal=${page.animal}">${page.animal}</a></div>
+                        </div>
+                    `;
+                });
+                htmlContent += '<hr></div>';
                 
-                <hr>
-                
-                <div class="origamiContainer">
-                    <div class="tableOfContententsTitle"><a href="fox.html">Fox</a></div>
-                </div> 
-                
-                <hr>
-                
-                <div class="origamiContainer">
-                    <div class="tableOfContententsTitle"><a href="cat.html">Cat</a></div>
-                </div> 
-                
-                <hr>
-                
-                <div class="origamiContainer">
-                    <div class="tableOfContententsTitle"><a href="dog.html">Dog</a></div>
-                </div> 
-                
-                <hr>
-                
-                <div class="origamiContainer">
-                    <div class="tableOfContententsTitle"><a href="elephant.html">Elephant</a></div>
-                </div> 
-                
-                <hr>
-                
-                <div class="origamiContainer">
-                    <div class="tableOfContententsTitle"><a href="frog.html">Frog</a></div>
-                </div> 
-                
-                <hr>
-                
-                <div class="origamiContainer">
-                    <div class="tableOfContententsTitle"><a href="mouse.html">Mouse</a></div>
-                </div> 
-                
-                <hr>
-
-                <div class="footer" id="footer"></div>
-                
-            </div>
-        </div>
-        <script src="script/script.js"></script>
-    </body>
+                // Update the HTML content with the dynamically generated content
+                document.getElementById('animalList').innerHTML = htmlContent;
+            })
+            .catch(error => console.error('Error fetching JSON:', error));
+    </script>
+</body>
 </html>

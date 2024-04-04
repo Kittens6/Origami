@@ -11,6 +11,7 @@ html, body {
     color: white;
     font-size: larger;
     margin: 0px;
+    height: 100%;
 }
 
 .hide {

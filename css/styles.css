@@ -6,6 +6,7 @@
 }
   
 html, body {
+    background-image: linear-gradient(to bottom right, #b600ee, #005bea);
     font-family: 'Apple Chancery', cursive; 
     background-color: rgba(182, 8, 8, 0.76);
     color: white;
@@ -80,7 +81,7 @@ hr {
 
 .mainContainer {
     background-image: linear-gradient(to bottom right, #00c6fb, #005bea);
-    height: 80%;
+    height: 63%;
     width: 80%;
     margin: 0px;
     margin-left: 10%;
@@ -88,6 +89,7 @@ hr {
     display: flex;
     justify-content: center; /* Center the content horizontally */
     align-items: center; /* Center the content vertically */
+    border-radius: 15px; /* Rounded corners */
 }
 
 .insideContainer {
@@ -131,3 +133,31 @@ hr {
     margin: 1%;
 }
 
+.searchContainer {
+    background-color: #ffffff; /* White background */
+    color: #000000; /* Black font color */
+    border-radius: 15px; /* Rounded corners */
+    padding: 10px; /* Padding around the content */
+    width: 77%; /* Adjust the width as needed */
+    margin: 20px auto; /* Center the chat box horizontally and add space above and below */
+}
+
+  .searchContainer input[type="text"] {
+    font-family: 'Apple Chancery', cursive; 
+    border: none; /* Remove border */
+    outline: none; /* Remove outline */
+    width: 100%; /* Full width */
+    border-radius: 10px; /* Rounded corners for the input field */
+    font-size: 40px;
+    text-align: center;
+    text-transform: capitalize;
+  }
+  
+  /* Disable autocomplete for input field */
+  .searchContainer input[type="text"]:-webkit-autofill,
+  .searchContainer input[type="text"]:-webkit-autofill:hover, 
+  .searchContainer input[type="text"]:-webkit-autofill:focus,
+  .searchContainer input[type="text"]:-webkit-autofill:active {
+      -webkit-box-shadow: 0 0 0 30px white inset !important; /* Override autofill background color */
+  }
+  

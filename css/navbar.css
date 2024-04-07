@@ -19,6 +19,7 @@
     padding-top: 0px;
     padding-bottom: 0px;
     user-select: none; /* Disable text selection */
+    white-space: nowrap; /* Prevent line breaks */
 }
 
 .menu ul {

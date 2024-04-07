@@ -5,7 +5,7 @@
 }
 
 .menu {
-    font-size: 30;
+    font-size: 30px; /* Added 'px' unit */
     display: none;
     position: absolute;
     top: 0px;
@@ -20,7 +20,9 @@
     padding-bottom: 0px;
     user-select: none; /* Disable text selection */
     white-space: nowrap; /* Prevent line breaks */
+    text-align: center; /* Center-align text */
 }
+
 
 .menu ul {
     list-style: none;

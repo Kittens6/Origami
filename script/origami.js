@@ -20,6 +20,15 @@ fetch('pages.json')
             .then(footerHtml => {
                 // Generate HTML content dynamically based on the selected page and footer content
                 const htmlContent = `
+                <head>
+                    <meta charset="UTF-8">
+                    <title>${selectedPage.title}</title>
+                    <link rel="stylesheet" href="css/styles.css">
+                    <link rel="stylesheet" href="css/navbar.css">
+                    <meta name="viewport" content="width=device-width, initial-scale=1">
+                </head>
+                <body> 
+
                     <div class="headerContainer">
                         <div class="headerTitle">${selectedPage.headerTitle}</div>
                         <div class="navBar" id="navBar">

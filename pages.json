@@ -11,57 +11,73 @@
       "animal": "Fox",
       "title": "Fox Origami",
       "headerTitle": "Fox Origami Tutorial",
-      "embedLink": "https://www.youtube.com/embed/U59acbe6FXo",
+      "embedLink": "https://www.youtube.com/embed/DJ23zgGAg6c?si=-phdD7RIRCUqUlMe",
       "embedTitle": "Crafty Fox",
-      "youtubeLink": "https://youtu.be/U59acbe6FXo"
+      "youtubeLink": "https://youtu.be/DJ23zgGAg6c"
     },
     {
       "animal": "Cat",
       "title": "Cat Origami",
       "headerTitle": "Cat Origami Tutorial",
-      "embedLink": "https://www.youtube.com/embed/U59acbe6FXo",
+      "embedLink": "https://www.youtube.com/embed/Lma76RE1NWQ?si=kP0kW8LHUp7suB_P",
       "embedTitle": "Crafty Cat",
-      "youtubeLink": "https://youtu.be/U59acbe6FXo"
+      "youtubeLink": "https://youtu.be/Lma76RE1NWQ"
     },
     {
       "animal": "Dog",
       "title": "Dog Origami",
       "headerTitle": "Dog Origami Tutorial",
-      "embedLink": "https://www.youtube.com/embed/U59acbe6FXo",
+      "embedLink": "https://www.youtube.com/embed/ZA5qRm8nfgU",
       "embedTitle": "Crafty Dog",
-      "youtubeLink": "https://youtu.be/U59acbe6FXo"
+      "youtubeLink": "https://youtu.be/ZA5qRm8nfgU"
     },
     {
       "animal": "Penguin",
       "title": "Penguin Origami",
       "headerTitle": "Penguin Origami Tutorial",
-      "embedLink": "https://www.youtube.com/embed/U59acbe6FXo",
+      "embedLink": "https://www.youtube.com/embed/LPsuADonRH0?si=CVx_h7s9a0_rdJZJ",
       "embedTitle": "Crafty Penguin",
-      "youtubeLink": "https://youtu.be/U59acbe6FXo"
+      "youtubeLink": "https://youtu.be/LPsuADonRH0"
     },
     {
       "animal": "Elephant",
       "title": "Elephant Origami",
       "headerTitle": "Elephant Origami Tutorial",
-      "embedLink": "https://www.youtube.com/embed/U59acbe6FXo",
+      "embedLink": "https://www.youtube.com/embed/d6hG7ha3bD4?si=6hlMxZ7QGKLaCq5v",
       "embedTitle": "Crafty Elephant",
-      "youtubeLink": "https://youtu.be/U59acbe6FXo"
+      "youtubeLink": "https://youtu.be/d6hG7ha3bD4"
     },
     {
       "animal": "Mouse",
       "title": "Mouse Origami",
       "headerTitle": "Mouse Origami Tutorial",
-      "embedLink": "https://www.youtube.com/embed/U59acbe6FXo",
+      "embedLink": "https://www.youtube.com/embed/QSVLJB4cNf8?si=h0u408NnHtv2VdzF",
       "embedTitle": "Crafty Mouse",
-      "youtubeLink": "https://youtu.be/U59acbe6FXo"
+      "youtubeLink": "https://youtu.be/QSVLJB4cNf8"
     },
     {
       "animal": "Frog",
       "title": "Frog Origami",
       "headerTitle": "Frog Origami Tutorial",
-      "embedLink": "https://www.youtube.com/embed/U59acbe6FXo",
+      "embedLink": "https://www.youtube.com/embed/1kZjq8f8Mpo?si=t8C4IvwdZGm6sAMg",
       "embedTitle": "Crafty Frog",
-      "youtubeLink": "https://youtu.be/U59acbe6FXo"
+      "youtubeLink": "https://youtu.be/1kZjq8f8Mpo"
+    },
+    {
+      "animal": "Cat Bookmark",
+      "title": "Cat Bookmark Oragami",
+      "headerTitle": "Cat Bookmark Tutorial",
+      "embedLink": "https://www.youtube.com/embed/ZlVXZD99aAQ?si=tDSwx7OvmXd0e-bl",
+      "embedTitle": "Crafty Cat Bookmark",
+      "youtubeLink": "https://youtu.be/ZlVXZD99aAQ"
+    },
+    {
+      "animal": "Dog Bookmark",
+      "title": "Dog Bookmark Oragami",
+      "headerTitle": "Dog Bookmark Tutorial",
+      "embedLink": "https://www.youtube.com/embed/YuilUql0VYs?si=O-wXVpQUanIj1hrc",
+      "embedTitle": "Crafty Dog Bookmark",
+      "youtubeLink": "https://youtu.be/YuilUql0VYs"
     }
   ]
   

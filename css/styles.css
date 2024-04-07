@@ -96,7 +96,6 @@ hr {
     margin: 5%; /* Add margin around the insideContainer */
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     overflow-y: auto; /* Enable vertical scrolling */
 }

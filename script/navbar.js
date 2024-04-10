@@ -7,8 +7,8 @@ fetch('pages.json')
         data.forEach(page => {
             const listItem = document.createElement('li');
             const link = document.createElement('a');
-            link.href = `origami.html?animal=${encodeURIComponent(page.animal)}`;
-            link.textContent = page.animal;
+            link.href = `origami.html?pageTitle=${encodeURIComponent(page.pageTitle)}`;
+            link.textContent = page.pageTitle;
             listItem.appendChild(link);
             navbarList.appendChild(listItem);
         });

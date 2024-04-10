@@ -1,70 +1,48 @@
-// script\origami.js
-
-// Parse the URL to extract the animal query parameter
+// Parse the URL to extract the title query parameter
 const urlParams = new URLSearchParams(window.location.search);
-const animal = urlParams.get('animal');
+const title = urlParams.get('title');
 
 // Fetch the JSON data
 fetch('pages.json')
     .then(response => response.json()) // Parse JSON response
     .then(data => {
-        // Generate the HTML content for the navbar dynamically based on the data
-        const navbarLinks = data.map(page => `<li><a href="origami.html?animal=${page.animal}">${page.animal}</a></li>`).join('');
+        // Find the page corresponding to the selected title
+        const selectedPage = data.find(page => page.title === title);
 
-        // Find the page corresponding to the selected animal
-        const selectedPage = data.find(page => page.animal === animal);
-        
-        // Fetch the footer HTML content
-        fetch('footer.html')
-            .then(response => response.text())
-            .then(footerHtml => {
-                // Generate HTML content dynamically based on the selected page and footer content
-                const htmlContent = `
-                <head>
-                    <meta charset="UTF-8">
-                    <title>${selectedPage.title}</title>
-                    <link rel="stylesheet" href="css/styles.css">
-                    <link rel="stylesheet" href="css/navbar.css">
-                    <meta name="viewport" content="width=device-width, initial-scale=1">
-                </head>
-                <body> 
+        if (selectedPage) {
+            // Set the document title to the title of the selected page
+            document.title = selectedPage.title;
 
-                    <div class="headerContainer">
-                        <div class="headerTitle">${selectedPage.headerTitle}</div>
-                        <div class="navBar" id="navBar">
-                            <div class="navBarHamburgerContainer" onclick="toggleMenu(this)">
-                                <div class="bar1"></div>
-                                <div class="bar2"></div>
-                                <div class="bar3"></div>
-                            </div>
-    
-                            <div class="menu" id="menu">
-                                <ul>
-                                    <li><a href="index.html">Home</a></li>
-                                    ${navbarLinks}
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="mainContainer">
-                        <div class="insideContainer">
-                            <div class="videoContainer">
-                                <iframe width="100%" height="100%" src="${selectedPage.embedLink}" title="${selectedPage.embedTitle}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                            </div>
-                            <div class="youtubeLink">YouTube Link: <a href="${selectedPage.youtubeLink}">${selectedPage.title} Video</a></div>
-                            <div class="footer" id="footer">${footerHtml}</div> <!-- Insert the footer content here -->
-                        </div>
-                    </div>
-                `;
-    
-                // Update the HTML content with the dynamically generated content
-                document.body.innerHTML = htmlContent;
-            })
-            .catch(error => console.error('Error fetching footer:', error));
+            // Generate the HTML content for the navbar dynamically based on the data
+            const navbarLinks = data.map(page => `<li><a href="origami.html?title=${page.title}">${page.pageTitle}</a></li>`).join('');
+
+            // Fetch the footer HTML content and generate the page content
+            fetch('footer.html')
+                .then(response => response.text())
+                .then(footerHtml => {
+                    // Now, use selectedPage details to populate the page content
+                    // No need to regenerate the whole page HTML, just modify the needed parts
+                    document.querySelector('.headerTitle').textContent = selectedPage.headerTitle;
+                    document.querySelector('.videoContainer iframe').src = selectedPage.embedLink;
+                    document.querySelector('.videoContainer iframe').title = selectedPage.embedTitle;
+                    document.querySelector('.youtubeLink a').href = selectedPage.youtubeLink;
+                    document.querySelector('.youtubeLink a').textContent = `${selectedPage.pageTitle} Video`;
+                    document.getElementById('navBar').innerHTML = `<div class="navBarHamburgerContainer" onclick="toggleMenu(this)">
+                                                                    <div class="bar1"></div>
+                                                                    <div class="bar2"></div>
+                                                                    <div class="bar3"></div>
+                                                                  </div>
+                                                                  <div class="menu" id="menu">
+                                                                    <ul>${navbarLinks}</ul>
+                                                                  </div>`;
+                    document.getElementById('footer').innerHTML = footerHtml;
+                })
+                .catch(error => console.error('Error fetching footer:', error));
+        } else {
+            console.error('Page not found');
+        }
     })
     .catch(error => console.error('Error fetching JSON:', error));
-
-
 
 function toggleMenu(x) {
     x.classList.toggle("change");

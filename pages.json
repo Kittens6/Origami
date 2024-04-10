@@ -1,83 +1,93 @@
 [
     {
-      "animal": "Bunny",
-      "title": "Bunny Origami",
+      "title": "Bunny",
+      "pageTitle": "Bunny Origami",
       "headerTitle": "Bunny Origami Tutorial",
       "embedLink": "https://www.youtube.com/embed/U59acbe6FXo",
       "embedTitle": "Crafty Bunny",
-      "youtubeLink": "https://youtu.be/U59acbe6FXo"
+      "youtubeLink": "https://youtu.be/U59acbe6FXo",
+      "profileImage": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3c81bf4c-53df-47dd-bd2d-0015c90567ba/dfxafs7-55aae000-c6d0-4714-bf92-bb73a9d99898.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzNjODFiZjRjLTUzZGYtNDdkZC1iZDJkLTAwMTVjOTA1NjdiYVwvZGZ4YWZzNy01NWFhZTAwMC1jNmQwLTQ3MTQtYmY5Mi1iYjczYTlkOTk4OTgucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.QX4bLARz1qtH3boTZ-69OSQy1TGUYX-kZp6tvq3I2pA"
     },
     {
-      "animal": "Fox",
-      "title": "Fox Origami",
+      "title": "Fox",
+      "pageTitle": "Fox Origami",
       "headerTitle": "Fox Origami Tutorial",
       "embedLink": "https://www.youtube.com/embed/DJ23zgGAg6c?si=-phdD7RIRCUqUlMe",
       "embedTitle": "Crafty Fox",
-      "youtubeLink": "https://youtu.be/DJ23zgGAg6c"
+      "youtubeLink": "https://youtu.be/DJ23zgGAg6c",
+      "profileImage": "https://r2.community.samsung.com/t5/image/serverpage/image-id/1033577i9BF90E7DC85500E1/image-size/large?v=v2&px=999"
     },
     {
-      "animal": "Cat",
-      "title": "Cat Origami",
+      "title": "Cat",
+      "pageTitle": "Cat Origami",
       "headerTitle": "Cat Origami Tutorial",
       "embedLink": "https://www.youtube.com/embed/Lma76RE1NWQ?si=kP0kW8LHUp7suB_P",
       "embedTitle": "Crafty Cat",
-      "youtubeLink": "https://youtu.be/Lma76RE1NWQ"
+      "youtubeLink": "https://youtu.be/Lma76RE1NWQ",
+      "profileImage": "https://tr.rbxcdn.com/1623b394780fcdd69abfd2519827de58/420/420/Hat/Png"
     },
     {
-      "animal": "Dog",
-      "title": "Dog Origami",
+      "title": "Dog",
+      "pageTitle": "Dog Origami",
       "headerTitle": "Dog Origami Tutorial",
       "embedLink": "https://www.youtube.com/embed/ZA5qRm8nfgU",
       "embedTitle": "Crafty Dog",
-      "youtubeLink": "https://youtu.be/ZA5qRm8nfgU"
+      "youtubeLink": "https://youtu.be/ZA5qRm8nfgU",
+      "profileImage": "https://i.pinimg.com/736x/b3/de/fa/b3defa0a8686b4e95a64cea5f134b049.jpg"
     },
     {
-      "animal": "Penguin",
-      "title": "Penguin Origami",
+      "title": "Penguin",
+      "pageTitle": "Penguin Origami",
       "headerTitle": "Penguin Origami Tutorial",
       "embedLink": "https://www.youtube.com/embed/LPsuADonRH0?si=CVx_h7s9a0_rdJZJ",
       "embedTitle": "Crafty Penguin",
-      "youtubeLink": "https://youtu.be/LPsuADonRH0"
+      "youtubeLink": "https://youtu.be/LPsuADonRH0",
+      "profileImage": "https://w7.pngwing.com/pngs/1000/665/png-transparent-computer-icons-profile-s-free-angle-sphere-profile-cliparts-free-thumbnail.png"
     },
     {
-      "animal": "Elephant",
-      "title": "Elephant Origami",
+      "title": "Elephant",
+      "pageTitle": "Elephant Origami",
       "headerTitle": "Elephant Origami Tutorial",
       "embedLink": "https://www.youtube.com/embed/d6hG7ha3bD4?si=6hlMxZ7QGKLaCq5v",
       "embedTitle": "Crafty Elephant",
-      "youtubeLink": "https://youtu.be/d6hG7ha3bD4"
+      "youtubeLink": "https://youtu.be/d6hG7ha3bD4",
+      "profileImage": "https://w7.pngwing.com/pngs/1000/665/png-transparent-computer-icons-profile-s-free-angle-sphere-profile-cliparts-free-thumbnail.png"
     },
     {
-      "animal": "Mouse",
-      "title": "Mouse Origami",
+      "title": "Mouse",
+      "pageTitle": "Mouse Origami",
       "headerTitle": "Mouse Origami Tutorial",
       "embedLink": "https://www.youtube.com/embed/QSVLJB4cNf8?si=h0u408NnHtv2VdzF",
       "embedTitle": "Crafty Mouse",
-      "youtubeLink": "https://youtu.be/QSVLJB4cNf8"
+      "youtubeLink": "https://youtu.be/QSVLJB4cNf8",
+      "profileImage": "https://w7.pngwing.com/pngs/1000/665/png-transparent-computer-icons-profile-s-free-angle-sphere-profile-cliparts-free-thumbnail.png"
     },
     {
-      "animal": "Frog",
-      "title": "Frog Origami",
+      "title": "Frog",
+      "pageTitle": "Frog Origami",
       "headerTitle": "Frog Origami Tutorial",
       "embedLink": "https://www.youtube.com/embed/1kZjq8f8Mpo?si=t8C4IvwdZGm6sAMg",
       "embedTitle": "Crafty Frog",
-      "youtubeLink": "https://youtu.be/1kZjq8f8Mpo"
+      "youtubeLink": "https://youtu.be/1kZjq8f8Mpo",
+      "profileImage": "https://w7.pngwing.com/pngs/1000/665/png-transparent-computer-icons-profile-s-free-angle-sphere-profile-cliparts-free-thumbnail.png"
     },
     {
-      "animal": "Cat Bookmark",
-      "title": "Cat Bookmark Origami",
+      "title": "Cat Bookmark",
+      "pageTitle": "Cat Bookmark Origami",
       "headerTitle": "Cat Bookmark Tutorial",
       "embedLink": "https://www.youtube.com/embed/ZlVXZD99aAQ?si=tDSwx7OvmXd0e-bl",
       "embedTitle": "Crafty Cat Bookmark",
-      "youtubeLink": "https://youtu.be/ZlVXZD99aAQ"
+      "youtubeLink": "https://youtu.be/ZlVXZD99aAQ",
+      "profileImage": "https://w7.pngwing.com/pngs/1000/665/png-transparent-computer-icons-profile-s-free-angle-sphere-profile-cliparts-free-thumbnail.png"
     },
     {
-      "animal": "Dog Bookmark",
-      "title": "Dog Bookmark Origami",
+      "title": "Dog Bookmark",
+      "pageTitle": "Dog Bookmark Origami",
       "headerTitle": "Dog Bookmark Tutorial",
       "embedLink": "https://www.youtube.com/embed/YuilUql0VYs?si=O-wXVpQUanIj1hrc",
       "embedTitle": "Crafty Dog Bookmark",
-      "youtubeLink": "https://youtu.be/YuilUql0VYs"
+      "youtubeLink": "https://youtu.be/YuilUql0VYs",
+      "profileImage": "https://w7.pngwing.com/pngs/1000/665/png-transparent-computer-icons-profile-s-free-angle-sphere-profile-cliparts-free-thumbnail.png"
     }
   ]
   

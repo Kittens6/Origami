@@ -1,18 +1,18 @@
 // script\origami.js
 
-// Parse the URL to extract the animal query parameter
+// Parse the URL to extract the shortTitle query parameter
 const urlParams = new URLSearchParams(window.location.search);
-const animal = urlParams.get('animal');
+const shortTitle = urlParams.get('shortTitle');
 
 // Fetch the JSON data
 fetch('pages.json')
     .then(response => response.json()) // Parse JSON response
     .then(data => {
         // Generate the HTML content for the navbar dynamically based on the data
-        const navbarLinks = data.map(page => `<li><a href="origami.html?animal=${page.animal}">${page.animal}</a></li>`).join('');
+        const navbarLinks = data.map(page => `<li><a href="origami.html?shortTitle=${page.shortTitle}">${page.shortTitle}</a></li>`).join('');
 
-        // Find the page corresponding to the selected animal
-        const selectedPage = data.find(page => page.animal === animal);
+        // Find the page corresponding to the selected shortTitle
+        const selectedPage = data.find(page => page.shortTitle === shortTitle);
         
         // Fetch the footer HTML content
         fetch('footer.html')

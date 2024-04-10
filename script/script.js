@@ -8,7 +8,7 @@ fetch('pages.json')
             htmlContent += `
                 <hr>
                 <div class="origamiContainer">
-                    <div class="tableOfContententsTitle"><a href="origami.html?animal=${page.animal}">${page.animal}</a></div>
+                    <div class="tableOfContententsTitle"><a href="origami.html?shortTitle=${page.shortTitle}">${page.shortTitle}</a></div>
                 </div>
             `;
         });
@@ -22,7 +22,7 @@ fetch('pages.json')
             const searchTerm = this.value.toLowerCase(); // Get the search term from the input field
 
             // Filter the list based on the search term
-            const filteredData = data.filter(page => page.animal.toLowerCase().includes(searchTerm));
+            const filteredData = data.filter(page => page.shortTitle.toLowerCase().includes(searchTerm));
 
             // Generate HTML content for the filtered list
             let filteredHtmlContent = '<div class="insideContainer">';
@@ -30,7 +30,7 @@ fetch('pages.json')
                 filteredHtmlContent += `
                     <hr>
                     <div class="origamiContainer">
-                        <div class="tableOfContententsTitle"><a href="origami.html?animal=${page.animal}">${page.animal}</a></div>
+                        <div class="tableOfContententsTitle"><a href="origami.html?shortTitle=${page.shortTitle}">${page.shortTitle}</a></div>
                     </div>
                 `;
             });
